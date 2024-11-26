@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8'?>
 
 <!DOCTYPE resources [
-    <!ENTITY appName "Linphone">
+    <!ENTITY appName "Nexiptel Phone">
 ]>
 
 <resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="MissingTranslation">
@@ -18,9 +18,9 @@
     <string name="about_privacy_policy_link" translatable="false">https://www.linphone.org/privacy-policy</string>
     <string name="about_license_link" translatable="false">https://www.gnu.org/licenses/gpl-3.0.html</string>
     <string name="about_version" translatable="false">&appName; Android %s</string>
-    <string name="about_liblinphone_sdk_version" translatable="false">&appName; SDK %s</string>
+    <string name="about_liblinphone_sdk_version" translatable="false">Linphone SDK %s</string>
     <string name="about_privacy_policy">Visit our privacy policy</string>
-    <string name="about_text" translatable="false">GNU General Public License v3.0\n © 2010–2023 Belledonne Communications</string>
+    <string name="about_text" translatable="false">This application is licensed under the GNU General Public License v3.0 (GPLv3).\n© 2010–2024 Belledonne Communications\n\nUnder this license, you have the freedom to:\n\nUse this app for any purpose.\nStudy how it works and modify it.\nShare copies of the app.\nDistribute modified versions of the app, provided you comply with the terms of GPLv3.\nThe source code for this application is available at: https://github.com/nexiptel-developer/nexiptel-softphone-android.git.\n\nFor more details, see the full license text at: https://www.gnu.org/licenses/gpl-3.0.html.</string>
     <string name="about_weblate_link" translatable="false">https://weblate.linphone.org/projects/linphone/</string>
     <string name="about_weblate_translation">Help us translate &appName;</string>
 

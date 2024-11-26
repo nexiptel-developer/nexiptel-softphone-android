@@ -132,7 +132,7 @@ class CorePreferences constructor(private val context: Context) {
         }
 
     var replaceSipUriByUsername: Boolean
-        get() = config.getBool("app", "replace_sip_uri_by_username", false)
+        get() = config.getBool("app", "replace_sip_uri_by_username", true)
         set(value) {
             config.setBool("app", "replace_sip_uri_by_username", value)
         }
@@ -489,11 +489,11 @@ class CorePreferences constructor(private val context: Context) {
 
     // Will disable chat feature completely
     val disableChat: Boolean
-        get() = config.getBool("app", "disable_chat_feature", false)
+        get() = config.getBool("app", "disable_chat_feature", true)
 
     // Will disable video feature completely
     val disableVideo: Boolean
-        get() = config.getBool("app", "disable_video_feature", false)
+        get() = config.getBool("app", "disable_video_feature", true)
 
     val forceEndToEndEncryptedChat: Boolean
         get() = config.getBool("app", "force_lime_chat_rooms", false)
@@ -577,13 +577,13 @@ class CorePreferences constructor(private val context: Context) {
     /* Assistant */
 
     val showCreateAccount: Boolean
-        get() = config.getBool("app", "assistant_create_account", true)
+        get() = config.getBool("app", "assistant_create_account", false)
 
     val showLinphoneLogin: Boolean
-        get() = config.getBool("app", "assistant_linphone_login", true)
+        get() = config.getBool("app", "assistant_linphone_login", false)
 
     val showGenericLogin: Boolean
-        get() = config.getBool("app", "assistant_generic_login", true)
+        get() = config.getBool("app", "assistant_generic_login", false)
 
     val showRemoteProvisioning: Boolean
         get() = config.getBool("app", "assistant_remote_provisioning", true)
@@ -591,13 +591,13 @@ class CorePreferences constructor(private val context: Context) {
     /* Side Menu */
 
     val showAccountsInSideMenu: Boolean
-        get() = config.getBool("app", "side_menu_accounts", true)
+        get() = config.getBool("app", "side_menu_accounts", false)
 
     val showAssistantInSideMenu: Boolean
         get() = config.getBool("app", "side_menu_assistant", true)
 
     val showSettingsInSideMenu: Boolean
-        get() = config.getBool("app", "side_menu_settings", true)
+        get() = config.getBool("app", "side_menu_settings", false)
 
     val showRecordingsInSideMenu: Boolean
         get() = config.getBool("app", "side_menu_recordings", true)
@@ -621,31 +621,31 @@ class CorePreferences constructor(private val context: Context) {
         get() = config.getBool("app", "allow_dtls_transport", false)
 
     val showAccountSettings: Boolean
-        get() = config.getBool("app", "settings_accounts", true)
+        get() = config.getBool("app", "settings_accounts", false)
 
     val showTunnelSettings: Boolean
-        get() = config.getBool("app", "settings_tunnel", true)
+        get() = config.getBool("app", "settings_tunnel", false)
 
     val showAudioSettings: Boolean
-        get() = config.getBool("app", "settings_audio", true)
+        get() = config.getBool("app", "settings_audio", false)
 
     val showVideoSettings: Boolean
         get() = config.getBool("app", "settings_video", !disableVideo)
 
     val showCallSettings: Boolean
-        get() = config.getBool("app", "settings_call", true)
+        get() = config.getBool("app", "settings_call", false)
 
     val showChatSettings: Boolean
         get() = config.getBool("app", "settings_chat", !disableChat)
 
     val showNetworkSettings: Boolean
-        get() = config.getBool("app", "settings_network", true)
+        get() = config.getBool("app", "settings_network", false)
 
     val showContactsSettings: Boolean
-        get() = config.getBool("app", "settings_contacts", true)
+        get() = config.getBool("app", "settings_contacts", false)
 
     val showAdvancedSettings: Boolean
-        get() = config.getBool("app", "settings_advanced", true)
+        get() = config.getBool("app", "settings_advanced", false)
 
     val showConferencesSettings: Boolean
         get() = config.getBool(

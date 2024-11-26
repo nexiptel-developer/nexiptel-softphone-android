@@ -101,6 +101,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
+                        android:visibility="gone"
                         android:text="@string/app_description" />
 
                     <TextView
@@ -143,6 +144,7 @@
                         android:autoLink="web"
                         android:gravity="center"
                         android:paddingTop="20dp"
+                        android:visibility="gone"
                         android:text="@string/about_link"
                         android:textColorLink="@color/primary_color" />
 
@@ -155,6 +157,7 @@
                         android:autoLink="web"
                         android:paddingTop="10dp"
                         android:gravity="center"
+                        android:visibility="gone"
                         android:text="@string/about_privacy_policy"
                         android:textColorLink="@color/primary_color" />
 
@@ -163,6 +166,7 @@
                         style="@style/about_license_font"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:autoLink="web"
                         android:layout_gravity="center"
                         android:gravity="center"
                         android:paddingTop="10dp"
@@ -179,6 +183,7 @@
                         android:gravity="center"
                         android:paddingTop="10dp"
                         android:paddingBottom="20dp"
+                        android:visibility="gone"
                         android:text="@string/about_weblate_translation" />
 
                     <View
